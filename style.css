@@ -1,0 +1,129 @@
+body {
+    background-image:url(bg.jpg);
+    background-size: cover; /* You can use other values like 'contain' or specific dimensions */
+    background-repeat: no-repeat;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+nav {
+    background-color: #444;
+    color: white;
+    padding: 0.5em;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    padding: 1em;
+}
+
+.games-section, .table-section {
+    margin-bottom: 2em;
+}
+
+.game-images img {
+    width: 100%;
+    max-width: 200px;
+    margin: 1em;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid hsl(0, 0%, 0%);
+}
+
+th, td {
+    padding: 0.5em;
+    text-align: left;
+}
+.contact{
+    padding-bottom: 70px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/*add 1 Simple animation part*/
+
+.games-section {
+        text-align: center;
+        padding: 2em;
+}
+
+
+
+.game-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-images img {
+    
+    border-radius: 10px;
+    margin: 0.5em;
+    opacity: 0; /* Set initial opacity to 0 for the animation */
+    animation: fadeIn 10s ease-out forwards; /* Animation duration: 10s */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+/*Responsive web page design*/ 
+
+/* Mobile styles */
+@media only screen and (max-width: 600px) {
+    .navbar a {
+        display: block;
+        margin-bottom: 0.5em;
+    }
+
+    .footer {
+        position: relative;
+    }
+}
+
+/* Tablet styles */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    /* Add specific styles for tablets here */
+}
+
+/* Desktop styles */
+@media only screen and (min-width: 901px) {
+    /* Add specific styles for desktops here */
+}
